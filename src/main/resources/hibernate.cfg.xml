@@ -30,7 +30,7 @@
         <!--<mapping resource = "Employee.hbm.xml"/>-->
 
         <!--List of java class Mapping-->
-        <mapping class="com.spring.hibernate.model.Employee"/>
+        <mapping class ="com.jpa.hibernate.model.Employee"/>
 
     </session-factory>
 </hibernate-configuration>

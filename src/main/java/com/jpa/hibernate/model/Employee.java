@@ -1,6 +1,4 @@
-package com.spring.hibernate.model;
-
-
+package com.jpa.hibernate.model;
 
 import javax.persistence.*;
 

@@ -1,9 +1,8 @@
-package com.spring.hibernate.service;
+package com.jpa.hibernate.service;
 
 
-import com.spring.hibernate.model.Employee;
-import com.spring.hibernate.repository.EmployeeDAO;
-
+import com.jpa.hibernate.model.Employee;
+import com.jpa.hibernate.repository.EmployeeDAO;
 import java.util.List;
 
 public class ManageEmployeeImpl {

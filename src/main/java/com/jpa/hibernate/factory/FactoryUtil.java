@@ -1,11 +1,11 @@
-package com.spring.hibernate.factory;
+package com.jpa.hibernate.factory;
 
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 public class FactoryUtil {
-    private static final SessionFactory sessionFactory;
+    private static final org.hibernate.SessionFactory sessionFactory;
     static {
         try {
             //XML based

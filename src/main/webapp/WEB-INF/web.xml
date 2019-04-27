@@ -24,13 +24,13 @@
 		</init-param>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>spring-HIBERNATE</param-value>
+			<param-value>com.spring.hibernate.config.MvcConfiguration</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>SpringDispatcher</servlet-name>
-		<url-pattern>/</url-pattern>
+		<url-pattern>/hibernate/*</url-pattern>
 	</servlet-mapping>
 
 	<session-config>

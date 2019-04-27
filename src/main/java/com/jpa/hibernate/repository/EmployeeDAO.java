@@ -1,11 +1,12 @@
-package com.spring.hibernate.repository;
+package com.jpa.hibernate.repository;
 
-import com.spring.hibernate.factory.FactoryUtil;
-import com.spring.hibernate.model.Employee;
+import com.jpa.hibernate.factory.FactoryUtil;
+import com.jpa.hibernate.model.Employee;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+
 
 import java.util.List;
 import java.util.Optional;

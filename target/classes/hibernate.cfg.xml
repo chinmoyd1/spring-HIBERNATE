@@ -27,7 +27,10 @@
         </property>
 
         <!-- List of XML mapping files -->
-        <mapping resource = "Employee.hbm.xml"/>
+        <!--<mapping resource = "Employee.hbm.xml"/>-->
+
+        <!--List of java class Mapping-->
+        <mapping class ="com.jpa.hibernate.model.Employee"/>
 
     </session-factory>
 </hibernate-configuration>

@@ -11,9 +11,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
-@ComponentScan(basePackages= "com/spring/hibernate")
+@ComponentScan(basePackages= "com.spring.hibernate.controller")
 @EnableWebMvc
 public class MvcConfiguration extends WebMvcConfigurerAdapter{
+
 
 	@Bean
 	public ViewResolver getViewResolver(){
