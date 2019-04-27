@@ -10,7 +10,7 @@ public class ManageEmployeeImpl {
 
     public static void main(String[] args) {
         ManageEmployeeImpl me = new ManageEmployeeImpl();
-        ManageEmployeeImpl.dao = new EmployeeDAO();
+        dao = new EmployeeDAO();
 
         Employee e1 = new Employee();
         e1.setFirstName("Sara");

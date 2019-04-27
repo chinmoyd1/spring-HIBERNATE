@@ -1,11 +1,12 @@
 package com.spring.hibernate.repository;
 
+import com.spring.hibernate.factory.FactoryUtil;
 import com.spring.hibernate.model.Employee;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.hibernate.cfg.Configuration;
+
 
 import java.util.List;
 import java.util.Optional;
@@ -14,13 +15,8 @@ public class EmployeeDAO implements Dao<Employee> {
 
     private static SessionFactory factory;
 
-     public EmployeeDAO() {
-       try {
-            factory = new Configuration().configure().buildSessionFactory();
-        } catch (Throwable ex) {
-            System.err.println("Failed to create sessionFactory object." + ex);
-            throw new ExceptionInInitializerError(ex);
-        }
+     public  EmployeeDAO() {
+       factory = FactoryUtil.getSessionFactory();
     }
 
     @Override

@@ -1,17 +1,25 @@
 package com.spring.hibernate.model;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "EMPLOYEE")
 public class Employee {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private int id;
+
+    @Column(name = "first_Name")
     private String firstName;
+
+    @Column(name = "last_Name")
     private String lastName;
+
+    @Column(name = "salary")
     private int salary;
 
     public Employee() {}
-    public Employee(String fname, String lname, int salary) {
-        this.firstName = fname;
-        this.lastName = lname;
-        this.salary = salary;
-    }
 
     public int getId() {
         return id;
