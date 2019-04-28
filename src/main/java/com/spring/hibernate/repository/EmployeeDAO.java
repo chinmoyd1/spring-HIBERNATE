@@ -6,9 +6,12 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
+
 
 public class EmployeeDAO implements Dao<Employee> {
 
@@ -81,8 +84,6 @@ public class EmployeeDAO implements Dao<Employee> {
 
         try {
             tx = session.beginTransaction();
-           // Employee employee = (Employee)session.get(Employee.class, EmployeeID);
-           // employee.setSalary( salary );
             session.update(employee);
             tx.commit();
         } catch (HibernateException e) {
@@ -100,7 +101,6 @@ public class EmployeeDAO implements Dao<Employee> {
 
             try {
                 tx = session.beginTransaction();
-                //Employee employee = (Employee)session.get(Employee.class, employee.getId());
                 session.delete(employee);
                 tx.commit();
             } catch (HibernateException e) {

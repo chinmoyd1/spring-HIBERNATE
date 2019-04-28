@@ -9,7 +9,7 @@
         </property>
 
         <property name = "hibernate.connection.driver_class">
-            com.mysql.jdbc.Driver
+            com.mysql.cj.jdbc.Driver
         </property>
 
         <!-- Assume test is the database name -->
@@ -30,7 +30,7 @@
         <!--<mapping resource = "Employee.hbm.xml"/>-->
 
         <!--List of java class Mapping-->
-        <mapping class ="com.jpa.hibernate.model.Employee"/>
+        <mapping class ="com.spring.hibernate.model.Employee"/>
 
     </session-factory>
 </hibernate-configuration>
