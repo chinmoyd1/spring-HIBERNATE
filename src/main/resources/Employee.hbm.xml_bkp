@@ -6,7 +6,7 @@
 <!--XML BASED MAPPING-->
 <!--
 <hibernate-mapping>
-    <class name = "com.jpa.hibernate.model.Employee" table = "EMPLOYEE">
+    <class name = "com.standAlone.hibernate.model.Employee" table = "EMPLOYEE">
 
         <meta attribute = "class-description">
             This class contains the employee detail.
